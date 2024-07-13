@@ -1,0 +1,29 @@
+.introduction {
+    height: 100vh;
+    width: 100vw;
+    background-color: #141516;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction p {
+    font-size: 41px;
+    z-index: 100;
+}
+
+.introduction svg {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+}
+.introduction svg path {
+    fill: #141516
+}
