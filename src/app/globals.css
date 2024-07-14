@@ -3,10 +3,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: black;
+  list-style: none;
 }
 
 
 body {
   cursor: wait;
   position: relative;
+  background-color: rgb(247, 246, 240);
 }

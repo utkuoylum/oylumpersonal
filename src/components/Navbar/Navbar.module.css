@@ -1,0 +1,35 @@
+.hoveredBackdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(195, 190, 190);
+    z-index: 1;
+}
+
+.link {
+    display: block;
+    position: relative;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: opacity 500ms;
+    z-index: 2;
+}
+.link:hover {
+    opacity: 1;
+}
+.items {
+    display: flex;
+}
+.item {
+    position: relative;
+}
+.navbar {
+    cursor: pointer;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    
+}
