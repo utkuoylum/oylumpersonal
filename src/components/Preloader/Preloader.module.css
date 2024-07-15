@@ -15,6 +15,7 @@
 .introduction p {
     font-size: 41px;
     z-index: 100;
+    color: white;
 }
 
 .introduction svg {

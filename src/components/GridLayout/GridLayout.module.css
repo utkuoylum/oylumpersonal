@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    place-content: center;
+    height: 70vh;
+    width: 70vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'bio bio bio social social'
+    'bio bio bio stack stack'
+    'tools tools tools tools tools';
+    gap: 1.2rem;
+    
+}
+.bio {
+    grid-area: bio;
+}
+.social {
+    grid-area: social;
+}
+.stack {
+    grid-area: stack;
+}
+.tools {
+    grid-area: tools;
+}
+
+.container * {
+    border-radius: 10px;
+    -webkit-box-shadow: -6px 8px 14px 1px rgba(91, 89, 89, 0.65);
+    box-shadow: -6px 8px 14px 1px rgba(91, 89, 89, 0.65);
+}
