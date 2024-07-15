@@ -1,0 +1,10 @@
+.container {
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateZ(5deg);
+}

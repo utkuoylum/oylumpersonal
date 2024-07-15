@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader/Preloader";
 import { AnimatePresence } from "framer-motion";
 import GridLayout from "@/components/GridLayout/GridLayout";
+import SlidingCards from "@/components/SlidingCards/SlidingCards";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +20,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
-      <GridLayout />
+      {/* <GridLayout /> */}
+      <SlidingCards />
     </main>
   );
 }
