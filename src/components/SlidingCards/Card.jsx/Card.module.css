@@ -1,6 +1,6 @@
 .card {
-    width: 80px;
     border-radius: .75rem;
+    display: flex;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -9,11 +9,10 @@
     border-radius: 2rem;
     margin: 0 10px;
     position: relative;
-    display: flex;
-    align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-    filter: blur(0.3px) grayscale(0.7);
+    filter: blur(0.3px) grayscale(0.8);
+    flex: 1
 }
 
 .card:not(.active):hover {
@@ -22,9 +21,9 @@
 }
 
 .active {
-    width: 600px;
     filter: blur(0) grayscale(0);
     transform: translateZ(30px);
+    flex: 7;
 }
 
 .active .icon {
@@ -48,7 +47,8 @@
     background: #223;
     color: white;
     border-radius: 50%;
-    width: 50px;
+    width: 10%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,16 @@
 .description h4 {
     text-transform: uppercase;
     color: #223;
+}
+
+@media (max-width: 768px){
+.active {
+    flex: 1;
+}
+
+.row {
+    position: initial;
+}
 }
 
 

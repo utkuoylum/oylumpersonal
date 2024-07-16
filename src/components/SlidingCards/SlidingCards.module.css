@@ -1,10 +1,17 @@
 .container {
-    height: 400px;
-    width: 70%;
+    height: 60%;
+    width: 60%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
     perspective: 1000px;
     transform-style: preserve-3d;
     transform: rotateZ(5deg);
+    /* gap: 1rem; */
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    gap: 1rem}
+ }

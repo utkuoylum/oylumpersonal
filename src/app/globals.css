@@ -12,7 +12,10 @@
 body {
   cursor: wait;
   position: relative;
-
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 4rem;
+  place-items: center;
   
 }
 

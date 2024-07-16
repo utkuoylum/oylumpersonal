@@ -27,10 +27,10 @@
 }
 .navbar {
     cursor: pointer;
-    position: fixed;
+    /* position: fixed;
     bottom: 2rem;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     border-radius: 10px;
     
 }
