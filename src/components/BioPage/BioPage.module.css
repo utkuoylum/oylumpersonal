@@ -1,0 +1,155 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+  .header {
+
+    position: sticky;
+    top: calc(var(--header-height) * -0.65);
+    height: var(--header-height);
+    width: 100%;
+    font-size: var(--header-font);
+    animation: block both linear;
+    animation-timeline: scroll(root);
+    transform-origin: 50% 0;
+    animation-range: 0 calc(var(--header-height) * 0.65);
+    z-index: 2;
+    text-align: center;
+  }
+  [data-debug='true'] .header {
+    outline: 4px dashed red;
+  }
+  @keyframes block {
+    to {
+      background: canvas;
+      box-shadow: 0 0 20px 5px hsl(0 0% 0% / 0.25);
+    }
+  }
+
+  .islandContainer {
+    width: var(--island-width);
+    height: var(--island-height);
+    border-radius: var(--island-height);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    translate: -50% -0%;
+    background: black;
+  }
+
+  .islandBar {
+    width: var(--island-width);
+    height: var(--island-height);
+    border-radius: var(--island-height);
+    background: black;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    translate: -50% 0%;
+  }
+  .island {
+    filter: url(#fancy-goo);
+  }
+
+  /* .islandBar::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    aspect-ratio: 1;
+    z-index: 2;
+    background: radial-gradient(red calc(30% - 1px), transparent 30%);
+    border-radius: 50%;
+  } */
+
+  .avatar {
+    width: var(--avatar-size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: black;
+    position: fixed;
+    left: 50%;
+    top: var(--avatar-position);
+    translate: -50% 0;
+  }
+
+  /* Scroll stuff */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100svh + var(--header-height));
+  }
+
+
+
+  .header h1 {
+    margin: 0;
+    position: fixed;
+    font-size: 3rem;
+    top: calc(var(--header-height) + var(--header-margin));
+    translate: -50% -100%;
+    left: 50%;
+    animation: scale both linear;
+    animation-timeline: scroll(root);
+    transform-origin: 50% 0;
+    animation-range: 0 calc(var(--header-height) * 0.65);
+  }
+
+  .avatar {
+    overflow: hidden;
+    animation: shrink both linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 calc(var(--header-height) * 0.65);
+    transform-origin: 50% 0;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fade both linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 calc(var(--header-height) * 0.65);
+  }
+
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  @keyframes shrink {
+    to {
+      translate: -50% calc(var(--avatar-position) * -1);
+      scale: 0.3;
+    }
+  }
+  @keyframes scale {
+    to {
+      translate: -50%
+        calc(
+          (
+              (var(--header-height) + var(--header-margin)) -
+                var(--avatar-position)
+            ) * -1
+        );
+      scale: 0.4;
+    }
+  }
+  @keyframes fade {
+    to {
+      filter: blur(10px);
+      opacity: 0;
+    }
+  }
+
+  

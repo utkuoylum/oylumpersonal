@@ -1,9 +1,10 @@
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100vw;
-  height: 80vh;
+  position: relative;
+display: grid;
+grid-template-rows: 1fr auto;
+gap: 4rem;
+place-items: center;
+
 }
+
+

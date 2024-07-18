@@ -10,12 +10,47 @@
 
 
 body {
-  cursor: wait;
-  position: relative;
   display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 4rem;
   place-items: center;
-  
+  min-height: 100vh;
+  cursor: wait;
 }
+
+body::before {
+  --size: 45px;
+  --line: color-mix(in lch, canvasText, transparent 70%);
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(
+        90deg,
+        var(--line) 1px,
+        transparent 1px var(--size)
+      )
+      50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+      var(--size) var(--size);
+  mask: linear-gradient(-20deg, transparent 50%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+:root {
+  --accent: hsl(10 20% 30%);
+  --island-margin: 20px;
+  --island-height: 40px;
+  --island-width: 200px;
+  --avatar-size: calc(var(--island-width) * 0.65);
+  --avatar-position: calc(
+    var(--island-height) + (var(--island-margin) * 1.25)
+  );
+  --header-margin: 0.5rem;
+  --header-height: calc(
+    var(--island-margin) + var(--avatar-position) + var(--avatar-size) + 1lh +
+      var(--header-margin)
+  );
+  --header-font: 3rem;}
 
