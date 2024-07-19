@@ -16,6 +16,7 @@ return (
       </div>
     </div>
     <h1>Etem Utku Oylum.</h1>
+    <h2>Frontend Developer</h2>
   </header>
   <svg
       width="0"
