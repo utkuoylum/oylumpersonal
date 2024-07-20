@@ -21,6 +21,12 @@
 }
 .items {
     display: flex;
+    background: linear-gradient(#ffffff, #ffffff) padding-box transparent;
+    border-radius: 5px;
+    padding: 0 1.5rem;
+    border: 2px solid transparent;
+
+    text-align: center;
 }
 .item {
     position: relative;
@@ -32,5 +38,40 @@
     left: 50%;
     transform: translate(-50%, -50%); */
     border-radius: 10px;
+    position: relative;
+    /* padding: 1rem; */
+    z-index: 20;
+    overflow: hidden;
     
 }
+.background {
+    position: absolute;
+  inset: 0;
+  z-index: -1;
+  }
+
+.offset {
+    width: 8rem;
+    aspect-ratio: 2 / 1;
+    position: absolute;
+    background: radial-gradient(
+      100% 100% at right,
+      #414243,
+      transparent 50%
+    );
+    offset-path: border-box;
+    offset-anchor: 100% 50%;
+    animation: journey var(--speed, 6s) infinite linear;
+}
+
+@container(width > 600px) {
+    .trail {
+      --speed: 12s;    
+    }
+  }
+  
+  @keyframes journey {
+    to {
+      offset-distance: 100%;
+    }
+  }

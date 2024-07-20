@@ -24,43 +24,7 @@ export default function Home() {
       <BioPage />
       <GridLayout />
       <SlidingCards />
-      fgdgdfgdfg
-      dfgdfgdfgdf
-      dfgdfgdfgfdg
-      dfgdfgdfgfdgdf
-      dfgdfgfd
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
-      <div className={styles.ff}>sdfsdfdsfdsfdsf</div>
+      
     </main>
   );
 }

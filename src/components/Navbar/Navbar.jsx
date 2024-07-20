@@ -12,6 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar} onMouseLeave={()=>setHoveredItem(null)}>
+        <div className={styles.background}> <div className={styles.offset}></div></div>
       <ul className={styles.items}>
         {LINKS.map(({ slug, label, href }) => {
           return (
