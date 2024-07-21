@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import GridLayout from "@/components/GridLayout/GridLayout";
 import SlidingCards from "@/components/SlidingCards/SlidingCards";
 import BioPage from "@/components/BioPage/BioPage";
+import LEDBoard from "@/components/Ledboard/Ledboard";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,9 +22,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
-      <BioPage />
-      <GridLayout />
-      <SlidingCards />
+      {/* <BioPage /> */}
+      {/* <GridLayout /> */}
+      {/* <SlidingCards /> */}
+      <LEDBoard />
       
     </main>
   );

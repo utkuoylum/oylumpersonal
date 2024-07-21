@@ -1,0 +1,52 @@
+
+
+.animateLed {
+  animation: led 100ms ease-in-out;
+}
+
+.container {
+  padding: 1rem;
+  width: 60vw;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: #4b5563;
+  background-image: linear-gradient( 85.2deg,  rgb(49, 46, 49) 7.5%, rgb(18, 18, 18) 88.7% );
+}
+
+.svgItem {
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.litCircle{
+    fill: #a855f7;
+}
+
+.animateCircle {
+    animation: led ease-in-out;
+}
+
+@keyframes led {
+    0% {
+      fill: inherit;
+      filter: brightness(1)
+    }
+    50% {
+      fill: #a855f7;
+      filter: brightness(3)
+
+    }
+    100% {
+      fill: inherit;
+      filter: brightness(1)
+
+    }
+  }
+
+
