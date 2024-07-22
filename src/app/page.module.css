@@ -1,9 +1,12 @@
 .main {
-  position: relative;
-display: grid;
-grid-template-rows: 1fr auto;
-gap: 4rem;
-place-items: center;
+position: relative;
+display: block;
+width: 90vw;
+min-height: 100vh;
+margin-inline: auto;
+align-content: center;
+text-align: center;
+overflow: hidden;
 
 }
 

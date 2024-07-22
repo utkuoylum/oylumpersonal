@@ -11,6 +11,7 @@
   border-width: 1px;
   border-color: #4b5563;
   background-image: linear-gradient( 85.2deg,  rgb(49, 46, 49) 7.5%, rgb(18, 18, 18) 88.7% );
+  scale: 1.4;
 }
 
 .svgItem {

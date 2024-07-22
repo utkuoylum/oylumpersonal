@@ -1,3 +1,4 @@
+import LEDBoard from '../Ledboard/Ledboard'
 import styles from './BioPage.module.css'
  
 export default function BioPage() {
@@ -16,8 +17,8 @@ return (
       </div>
     </div>
     <h1>Etem Utku Oylum.</h1>
-    <h2>Frontend Developer</h2>
   </header>
+  <LEDBoard />
   <svg
       width="0"
       height="0"

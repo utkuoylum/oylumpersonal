@@ -10,15 +10,13 @@
 
 
 body {
-  display: grid;
-  place-items: center;
   min-height: 100vh;
   cursor: wait;
 }
 
 body::before {
-  --size: 45px;
-  --line: color-mix(in lch, canvasText, transparent 70%);
+  --size: 7rem;
+  --line: color-mix(in lch, canvasText, transparent 60%);
   content: '';
   height: 100vh;
   width: 100vw;

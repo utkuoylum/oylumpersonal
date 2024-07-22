@@ -33,13 +33,11 @@
 }
 .navbar {
     cursor: pointer;
-    /* position: fixed;
+    position: fixed;
     bottom: 2rem;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     border-radius: 10px;
-    position: relative;
-    /* padding: 1rem; */
     z-index: 20;
     overflow: hidden;
     
