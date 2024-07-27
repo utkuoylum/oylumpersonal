@@ -9,6 +9,7 @@ import SlidingCards from "@/components/SlidingCards/SlidingCards";
 import BioPage from "@/components/BioPage/BioPage";
 import LEDBoard from "@/components/Ledboard/Ledboard";
 import Button from "@/components/Button/Button";
+import HighlightCards from "@/components/HighlightCards/HighlightCards";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,13 +28,14 @@ export default function Home() {
       {/* <GridLayout /> */}
       {/* <SlidingCards /> */}
       {/* <LEDBoard /> */}
-      <div className={styles.gridContainer}>
+      {/* <div className={styles.gridContainer}>
         <div className={styles.gridCol}>
           <Button />
         </div>
         <div className={styles.gridCol}></div>
         <div className={styles.gridCol}></div>
-      </div>
+      </div> */}
+      <HighlightCards />
       
     </main>
   );
