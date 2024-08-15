@@ -1,0 +1,164 @@
+/* Genel stil ayarları */
+.aboutContainer {
+    height: 100vh;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .avatarContainer {
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+  }
+  
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .headingAccent {
+    color: #ff6347; /* Örnek bir accent rengi */
+  }
+  
+  .paragraph {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .counters {
+    display: flex;
+    max-width: 36rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .counterItem {
+    position: relative;
+    flex: 1;
+  }
+  
+  .counterItem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .counterText {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ff6347; /* Örnek bir accent rengi */
+    margin-bottom: 0.5rem;
+  }
+  
+  .counterLabel {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+    max-width: 100px;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48%;
+    height: 480px;
+  }
+  
+  .infoTabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .infoTab {
+    position: relative;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+  }
+  
+  .infoTabActive {
+    color: #ff6347; /* Örnek bir accent rengi */
+  }
+  
+  .infoTabActive::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6347;
+    transition: all 0.3s;
+  }
+  
+  .infoContent {
+    padding-top: 0.5rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    max-width: max-content;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .infoItemTitle {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+  
+  .infoIcons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .infoIcon {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .experience {
+    display: flex; 
+    flex: 1 1 0%; 
+  }
+  @media (min-width: 1280px) { 
+    .experience {
+
+        column-gap: 1.5rem; 
+    }
+   }
+
+   .stage {
+    display: none; 
+
+
+
+   }
+   @media (min-width: 768px) { 
+    .stage {
+
+        display: flex; 
+    }
+   }
+  
+  

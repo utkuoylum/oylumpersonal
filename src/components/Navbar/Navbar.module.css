@@ -1,75 +1,75 @@
+.navbar {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 20;
+  overflow: hidden;
+  will-change: auto;
+}
+
 .hoveredBackdrop {
-    position: absolute;
-    inset: 0;
-    background-color: rgb(195, 190, 190);
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(65, 66, 67, 0.4);
+  z-index: 1;
+
 }
 
 .link {
-    display: block;
-    position: relative;
-    padding: 0.7rem 1rem;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.6rem;
-    opacity: 0.7;
-    transition: opacity 500ms;
-    z-index: 2;
+  display: block;
+  position: relative;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  transition: opacity 500ms;
+  z-index: 2;
 }
 .link:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .items {
-    display: flex;
-    background: linear-gradient(#ffffff, #ffffff) padding-box transparent;
-    border-radius: 5px;
-    padding: 0 1.5rem;
-    border: 2px solid transparent;
+  display: flex;
+  background: linear-gradient(#ffffff, #ffffff) padding-box transparent;
+  border-radius: 5px;
+  padding: 0 1.5rem;
+  border: 2px solid transparent;
 
-    text-align: center;
+  text-align: center;
 }
 .item {
-    position: relative;
+  position: relative;
 }
-.navbar {
-    cursor: pointer;
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    z-index: 20;
-    overflow: hidden;
-    
-}
+
 .background {
-    position: absolute;
+  position: absolute;
   inset: 0;
   z-index: -1;
-  }
-
-.offset {
-    width: 8rem;
-    aspect-ratio: 2 / 1;
-    position: absolute;
-    background: radial-gradient(
-      100% 100% at right,
-      #414243,
-      transparent 50%
-    );
-    offset-path: border-box;
-    offset-anchor: 100% 50%;
-    animation: journey var(--speed, 6s) infinite linear;
 }
 
-@container(width > 600px) {
-    .trail {
-      --speed: 12s;    
-    }
+.offset {
+  width: 10rem;
+  aspect-ratio: 2 / 1;
+  position: absolute;
+  background: radial-gradient(100% 100% at right, #414243, transparent 50%);
+  offset-path: border-box;
+  offset-anchor: 100% 60%;
+  animation: journey var(--speed, 6s) infinite linear;
+}
+
+@container (width > 600px) {
+  .trail {
+    --speed: 12s;
   }
-  
-  @keyframes journey {
-    to {
-      offset-distance: 100%;
-    }
+}
+
+@keyframes journey {
+  to {
+    offset-distance: 100%;
   }
+}
