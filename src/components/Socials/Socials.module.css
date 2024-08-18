@@ -1,0 +1,93 @@
+
+.socialsWrapper {
+    position: relative;
+    --background: #ececec;
+    --active: #00C896; 
+}
+
+.socialsMenu {
+    opacity: 1;    
+    transition: opacity 0.5s;
+}
+
+.shareButton {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--background);
+    border-radius: 50%;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.shareButton img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.shareButton:hover {
+    background-color: var(--active);
+    transform: scale(1.03);
+}
+
+.social {
+    position: absolute;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.social img {
+    height: 2rem;
+    width: 2rem;
+    transition: all 0.3s;
+}
+
+.social a {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+}
+
+.social:hover img {
+    transform: scale(1.10);
+}
+
+/* These hover effects are still applied based on index */
+.social:nth-child(1):hover {
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+
+.social:nth-child(2):hover {
+    background-color: #1D9BF0;
+}
+
+.social:nth-child(3):hover {
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+}
+
+.social:nth-child(4):hover {
+    background-color: #e52d27;
+}

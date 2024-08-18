@@ -11,9 +11,8 @@
   }
   
   .main {
-    width: 90vw;
+    width: clamp(48rem, 90vw, 1640px);
     height: 600px;
-    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
