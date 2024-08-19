@@ -1,24 +1,44 @@
+:root {
+  --accent: hsl(10 20% 30%);
+  --island-margin: 20px;
+  --island-height: 40px;
+  --island-width: 200px;
+  --avatar-size: calc(var(--island-width) * 0.65);
+  --avatar-position: calc(var(--island-height) + (var(--island-margin) * 1.25));
+  --header-margin: 0.5rem;
+  --header-height: calc(
+    var(--island-margin) + var(--avatar-position) + var(--avatar-size) + 1lh +
+      var(--header-margin)
+  );
+  --header-font: 3rem;
+  --nav-height: 15vh;
+  --head-height: 15vh;
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: black;
   list-style: none;
+  --bgColor: rgb(32, 32, 32);
+  color: rgb(228, 226, 222);
 }
-
 
 body {
   height: 100vh;
   overflow: hidden;
   cursor: wait;
+  background-color: var(--bgColor);
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 body::before {
   --size: 7rem;
   --line: color-mix(in lch, canvasText, transparent 60%);
-  content: '';
+  content: "";
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -37,19 +57,7 @@ body::before {
   z-index: -1;
 }
 
-:root {
-  --accent: hsl(10 20% 30%);
-  --island-margin: 20px;
-  --island-height: 40px;
-  --island-width: 200px;
-  --avatar-size: calc(var(--island-width) * 0.65);
-  --avatar-position: calc(
-    var(--island-height) + (var(--island-margin) * 1.25)
-  );
-  --header-margin: 0.5rem;
-  --header-height: calc(
-    var(--island-margin) + var(--avatar-position) + var(--avatar-size) + 1lh +
-      var(--header-margin)
-  );
-  --header-font: 3rem;}
+main {
+height: calc(100vh - (var(--nav-height) + var(--head-height)));
 
+}

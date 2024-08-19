@@ -1,3 +1,11 @@
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-height);
+}
+
 .navbar {
   cursor: pointer;
   position: fixed;
@@ -35,7 +43,7 @@
 }
 .items {
   display: flex;
-  background: linear-gradient(#ffffff, #ffffff) padding-box transparent;
+  background: linear-gradient(var(--bgColor), var(--bgColor)) padding-box transparent;
   border-radius: 5px;
   padding: 0 1.5rem;
   border: 2px solid transparent;

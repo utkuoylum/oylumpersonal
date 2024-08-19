@@ -11,6 +11,7 @@ export default function Navbar() {
   const id = useId();
 
   return (
+    <div className={styles.navbarContainer}>
     <nav className={styles.navbar} onMouseLeave={()=>setHoveredItem(null)}>
         <div className={styles.background}> <div className={styles.offset}></div></div>
       <ul className={styles.items}>
@@ -26,6 +27,7 @@ export default function Navbar() {
         })}
       </ul>
     </nav>
+    </div>
   );
 }
 

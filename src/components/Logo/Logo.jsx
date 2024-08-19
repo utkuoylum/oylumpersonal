@@ -5,7 +5,7 @@ export default function Logo() {
 return (
     <div className={styles.head}>
 
-<h2 className={styles.logo}>Oylum.</h2>
+<h2 className={styles.logo}>OYLUM.</h2>
 <Socials />
     </div>
 )}

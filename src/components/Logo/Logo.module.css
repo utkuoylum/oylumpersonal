@@ -1,18 +1,10 @@
 .logo {
-  color: #ffffff;
-  text-shadow: 0 1px 0 #b2b2b2, 0 2px 0 #8b8a8a, 0 3px 0 #a3a2a2,
-    0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-  color: #f3f3f3;
+    letter-spacing: .15em;
 }
 .head {
-  position: fixed;
-  top: 2rem;
-  left: 4rem;
-  width: 100%;
+  width: min(80vw, 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 2rem;
+  height: var(--head-height);
 }
