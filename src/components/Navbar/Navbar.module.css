@@ -12,6 +12,7 @@
   z-index: 20;
   overflow: hidden;
   will-change: auto;
+  position: relative;
 }
 
 .hoveredBackdrop {

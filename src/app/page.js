@@ -25,7 +25,7 @@ export default function Home() {
   });
   return (
     <main className={styles.main}>
-      <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence>
+      {/* <AnimatePresence mode="wait">{isLoading && <Preloader />}</AnimatePresence> */}
       {/* {!isLoading && <About />} */}
       {/* <BioPage /> */}
       {/* <GridLayout /> */}
@@ -38,7 +38,8 @@ export default function Home() {
         <div className={styles.gridCol}></div>
         <div className={styles.gridCol}></div>
       </div> */}
-      <HighlightCards />
+      {/* <HighlightCards /> */}
+      <About />
       {/* <Socials /> */}
       
     </main>

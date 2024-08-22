@@ -2,9 +2,12 @@
 .socialsWrapper {
     position: relative;
     --background: #ffffff;
-    --active: #00C896;
+    --active: #df8642;
     color: black;
     font-size: 2rem;
+    height: 90%;
+    display: grid;
+    place-items: center;
 }
 
 .socialsMenu {
@@ -31,8 +34,6 @@
 .shareButton:hover {
     background-color: var(--active);
     transform: scale(1.03);
-    outline: 1px solid black;
-    outline-offset: 0.2rem;
 }
 
 .social {
